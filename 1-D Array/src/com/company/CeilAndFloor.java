@@ -1,53 +1,40 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class CeilAndFloor {
     public static void main(String[] args) {
 
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the size of an Array");
-        int n= sc.nextInt();
-        int[] arr=new int[n];
-        for(int i=0;i<n;i++){
-            System.out.println("Enter the Value at index " +i);
-             arr[i]=sc.nextInt();
-        }
-        System.out.println("Enter the Number you want their ceil and floor");
-        int num=sc.nextInt();
+        int[] matrix={10,20,30,40,50,60,70,80,90,100};
+        int target=77;
+        int start=0;
+        int end=matrix.length-1;
 
+        int ceil=0,floor=0;
 
-
-        int l=0;
-        int e=arr.length-1;
-        int ceil=0;
-        int floor=0;
-        while(l<=e){
-            int mid=(l+e)/2;
-
-            if(arr[mid]>num){
-                e=e-mid;
-                ceil=arr[mid];
-            }
-            else if(arr[mid]<num){
-                l=l+mid;
-                floor=arr[mid];
-            }else{
-                ceil=arr[mid];
-                floor=arr[mid];
+        while(start<=end){
+            int mid=start+(end-start)/2;
+            if(target == matrix[mid]){
+               floor=mid;
+               ceil=mid;
                 break;
             }
+            else if(target>matrix[mid]){
+                start=mid+1;
+                floor=mid;
+            }
+            else if(target<matrix[mid]){
+                end=mid-1;
+                ceil=mid;
+
+            }
 
 
         }
 
+//        ceil=end;
+//        floor=start;
 
-        System.out.println(ceil);
-        System.out.println(floor);
-
-
-
-
-
+        System.out.println( matrix[ceil]+"  "+matrix[floor]);
     }
-}
+
+
+      }
