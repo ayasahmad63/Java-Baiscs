@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1924e5f4-5f9a-451b-add9-9a79307aa81d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1-D Array/src/com/company/FirstAndLastIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-D Array/src/com/company/CeilAndFloor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-D Array/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/1-D Array/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-D Array/src/com/company/SpiralTranversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-D Array/src/com/company/SpiralTranversal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SpiralTranversal">
     <configuration name="CeilAndFloor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.CeilAndFloor" />
       <module name="1-D Array" />
@@ -49,8 +48,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpiralTranversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.SpiralTranversal" />
+      <module name="2-D Array" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpiralTranversal" />
         <item itemvalue="Application.CeilAndFloor" />
       </list>
     </recent_temporary>
@@ -76,5 +89,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
