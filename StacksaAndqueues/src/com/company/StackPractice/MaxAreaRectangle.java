@@ -22,7 +22,7 @@ public class MaxAreaRectangle {
 
             }
 
-            System.out.println(Arrays.toString(num));
+            System.out.println(Arrays.toString(num) );
             int n=MAH(num);
             if(n>max)max=n;
 
