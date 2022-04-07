@@ -13,12 +13,12 @@ public class AFullGenericTree {
         int data;
         ArrayList<Node> children = new ArrayList<>();
 
-        Node(){
+        Node() {
 
         }
 
-        Node(int data){
-            this.data=data;
+        Node(int data) {
+            this.data = data;
         }
     }
 
@@ -64,11 +64,154 @@ public class AFullGenericTree {
 
 //      LineWiseLevelOrder3(head);
 
-        RemoveLeaveFromGenericTree(head);
-display(head);
+//        RemoveLeaveFromGenericTree(head);
+//display(head);
 
 
-     }
+//        System.out.println(FindElementInGenericTree(head,30));
+//
+//
+
+
+//        Node to Root path
+//        ArrayList<Node> ans=new ArrayList<>();
+//        ans=NodeToRootPath(head,70);
+//
+//        for(Node node:ans) {
+//            System.out.println(node.data);
+//        }
+
+
+//Lowest Common Ancestor
+
+//    ArrayList<Node> low = new ArrayList<>();
+//    ArrayList<Node> high = new ArrayList<>();
+//
+//    low=NodeToRootPath(head,110);
+//    high=NodeToRootPath(head,120);
+//    int i= low.size()-1;int j=low.size()-1;
+//    while( i>=0 && j>=0 && low.get(i).data==high.get(j).data){
+//        i--;
+//        j--;
+//    }
+//        System.out.println(low.get(++i).data);
+
+
+// Distance Between Two Nodes
+
+
+//       j)); ArrayList<Node> low = new ArrayList<>();
+//        ArrayList<Node> high = new ArrayList<>();
+//
+//        low=NodeToRootPath(head,70);
+//        high=NodeToRootPath(head,120);
+//        int i= low.size()-1;int j=low.size()-1;
+//        while( i>=0 && j>=0 && low.get(i).data==high.get(j).data){
+//            i--;
+//            j--;
+//        }
+//
+//        System.out.println((i)+(
+
+
+//        Tree Similar In Tree
+
+
+//        System.out.println(TreeSimilarInShape(head,head));
+
+
+//        MultiSolver
+
+//        height=0;
+//        size=0;
+//        MAX=Integer.MAX_VALUE;
+//        MIN=Integer.MIN_VALUE;
+//
+//        MultiSolvers(head,0);
+//        System.out.println(height);
+//        System.out.println(size);
+//        System.out.println(MAX);
+//        System.out.println(MIN);
+//
+
+
+
+
+
+
+//        Predessor and Succesor
+
+
+//        PredecessorAndSuccessor(head,110);
+//        System.out.println(Predecessor);
+//        System.out.println(Successor);
+
+
+
+
+
+
+//Ceil And Floor
+
+//        Floor :- Largest Among Smallest
+//        Ceil  :- Smallest Among Largest
+
+//        CeilAndFLoor(head,55);
+//        System.out.println(ceil);
+//        System.out.println(floor);;
+
+
+
+
+// In Kth largest Number we get floor of +infintirt then floor of that number till kth times
+//  in this way we get the kth largest number
+//        int k=3;
+//        int KthLargest=Integer.MAX_VALUE;
+//        ceil=Integer.MIN_VALUE;
+//        for(int i=0;i<k;i++){
+//            CeilAndFLoor(head,KthLargest);
+//            KthLargest=ceil;
+//            ceil=Integer.MIN_VALUE;
+//
+//        }
+
+
+
+
+
+//        Maximum Subtree
+//        int sa=Maixmum_Subtree(head);
+//        System.out.println(weight);
+//        System.out.println(Max_Node);
+
+
+
+
+
+//        Diameter of the tree
+//        int d=Diameter(head);
+//        System.out.println(dia);
+//
+//
+
+
+
+
+
+
+//        ilterative Pre and Post
+
+        IlterativePrePost(head);
+
+
+    }
+//
+
+
+
+
+
+
 
 
 
@@ -325,6 +468,460 @@ display(head);
 
 
 
+//    Linearize A Generic tree
+
+//    Not Properly unerstand Will be done lateron
+
+    public static void LinearizeGenerictree(Node node){
+
+        for(Node child:node.children){
+            LinearizeGenerictree(child);
+        }
+
+        while (node.children.size()>1){
+            Node last=node.children.remove(node.children.size()-1);
+            Node seclast=node.children.get(node.children.size()-1);
+            Node Tailseclast=Tail(seclast);
+
+            Tailseclast.children.add(last);
+        }
+
+    }
+    private static  Node Tail(Node node){
+
+        while(node.children.size()==1){
+            node=node.children.get(0);
+        }
+
+        return node;
+    }
+
+
+
+
+
+
+
+
+
+
+//    Finding Element in Generic tree
+
+
+    public static boolean FindElementInGenericTree(Node node,int target){
+
+        if(node.data==target){
+            return true;
+
+        }
+        boolean ans=false;
+        for(Node child:node.children){
+
+
+                    if(FindElementInGenericTree(child,target)){
+                     ans=true;
+                     break;
+                    }
+        }
+
+
+
+        return ans;
+    }
+
+
+
+
+
+
+
+
+
+
+//    Node to Root Path
+
+    public static  ArrayList NodeToRootPath(Node node,int target){
+        ArrayList<Node> ans=new ArrayList<>();
+
+        if(node.data==target){
+        ans.add(node);
+        return ans;
+      }
+        for(Node child:node.children){
+            ans=NodeToRootPath(child,target);
+            if(ans.size()>0){
+                ans.add(node);
+                return ans;
+            }
+        }
+
+        return ans;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lowest Common Ancestor
+
+//    In Lowest Commonn Ancestor we find both Node to Root path for both low ans high value
+//    We get both ArrayList of both low,high value and then get the common from it
+
+
+
+    public static  ArrayList NodeToRootPath1(Node node,int target){
+        ArrayList<Node> ans=new ArrayList<>();
+
+        if(node.data==target){
+            ans.add(node);
+            return ans;
+        }
+        for(Node child:node.children){
+            ans=NodeToRootPath(child,target);
+            if(ans.size()>0){
+                ans.add(node);
+                return ans;
+            }
+        }
+
+        return ans;
+    }
+
+
+
+
+
+
+
+
+//    Distance Between Nodes
+
+//    In This we found both of Node to Root path for both numbers
+//    Then both Arraylist we found and i+j
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Are Trees Similar in Shape
+
+
+    public static  boolean TreeSimilarInShape(Node n1,Node n2){
+        if(n1.children.size()!=n2.children.size()){
+            return false;
+        }
+        for(int i=0;i<n1.children.size();i++){
+            if(!TreeSimilarInShape(n1.children.get(i),n2.children.get(i))){
+                return false;
+            }
+        }
+
+
+        return true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    Generic Tree is Symmetrical
+
+
+    public static boolean SymmetricTree(Node n1,Node n2){
+
+        if(n1.children.size()!=n2.children.size()){
+            return false;
+        }
+
+        for(int i=0,j=n2.children.size()-1;i<n1.children.size();i++){
+
+            if(!SymmetricTree(n1.children.get(i),n2.children.get(j-1))){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MultiSolver
+
+    static int size;
+    static  int height;
+    static int MAX;
+    static int MIN;
+
+    public static  void MultiSolvers(Node node ,int depth){
+
+        size++;
+        height=Math.max(depth,height);
+        MIN=Math.max(MAX,node.data);
+        MAX=Math.min(MIN,node.data);
+
+        for(Node child:node.children){
+            MultiSolvers(child,depth+1);
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+//Predecessor and Successor
+    static int state=0;
+    static int Predecessor;
+    static int Successor;
+
+
+    public static void PredecessorAndSuccessor(Node node ,int data){
+        if(state==0){
+            if(node.data==data){
+                state=1;
+            }else{
+                Predecessor=node.data;
+            }
+        }else if(state==1){
+            Successor=node.data;
+            state=2;
+        }
+
+
+        for(Node child:node.children){
+            PredecessorAndSuccessor(child,data);
+        }
+    }
+
+
+
+
+
+//     Ceil and Floor
+
+    static int floor=Integer.MAX_VALUE;    //Smalllest Among Largest
+    static int ceil =Integer.MIN_VALUE;    //Greatest Among Smallest
+
+    public  static  void CeilAndFLoor(Node node,int data){
+      if(node.data>data){
+          if(floor>node.data){
+              floor=node.data;
+          }
+      }else if(node.data<data){
+          if(ceil< node.data){
+              ceil=node.data;
+          }
+      }
+
+
+
+        for(Node child:node.children){
+            CeilAndFLoor(child,data);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+//   Maximum Subtree
+
+
+    static  int weight=0;
+    static  int Max_Node=0;
+
+    public  static  int Maixmum_Subtree(Node node){
+        int sum=0;
+
+
+        for(Node child:node.children){
+            int temp=Maixmum_Subtree(child);
+            sum+=temp;
+        }
+        sum+=node.data;
+        if(weight<sum){
+            weight=sum;
+            Max_Node=node.data;
+        }
+
+
+
+        return sum;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+//    Diameter Of the node In
+//     link:-https://www.youtube.com/watch?v=GIA2cZgOdwg&list=PL-Jc9J83PIiEmjuIVDrwR9h5i9TT2CEU_&index=49
+//     in Diameter we use to find largest distance from a child and Second Largest distance then diameter=ld+sld+2
+
+    static int dia=0;
+    public static int Diameter(Node node){
+        int ld=-1;
+        int sld=-1;
+
+
+        for(Node child:node.children){
+            int ch=Diameter(child);
+            if(ch>ld){
+                sld=ld;
+                ld=ch;
+            }else if(ch>sld){
+                sld=ch;
+            }
+        }
+        if(ld+sld+2>dia){
+            dia=ld+sld+2;
+        }
+
+        ld++;
+        return ld;
+    }
+
+
+
+
+
+
+
+
+//  Ilterative Pre and Post of Generic Tree
+
+
+//    There are Implication of Stack pair with Three Conditions
+//    Case 1:- if state=-1;then   state++,add pre
+//    Case 2:-if state=node.children.size;then add post and stack.pop
+//    Case 3;-else ;st.push(new Pair(pair.node.children.get(pair.data),-1));
+//                state++;
+
+
+    public  static  class Pair{
+        Node node;
+        int data;
+
+        Pair(Node node,int data){
+            this.node=node;
+            this.data=data;
+        }
+
+    }
+
+
+   public static  void IlterativePrePost(Node nodee){
+        Stack<Pair> st=new Stack<>();
+        st.push(new Pair(nodee,-1));
+
+         String pre="";
+         String post="";
+        while(st.size()>0){
+            Pair pair=st.peek();
+            if(pair.data==-1){
+                pair.data++;
+                pre=pre+pair.node.data+",";
+//                st.push(new Pair(pair.node.children.get(pair.data),-1));
+            }else if(pair.data==pair.node.children.size()){
+                post=post+pair.node.data+",";
+                st.pop();
+            }else{
+
+//                post=post+ pair.node.data +",";
+                st.push(new Pair(pair.node.children.get(pair.data),-1));
+                pair.data++;
+            }
+
+        }
+       System.out.println(pre);
+       System.out.println(post);
+
+   }
 
 
 
