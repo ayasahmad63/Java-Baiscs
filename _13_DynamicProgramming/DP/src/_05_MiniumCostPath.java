@@ -1,4 +1,4 @@
-public class _5_MiniumCostPath {
+public class _05_MiniumCostPath {
 
 
     public static void main(String[] args) {

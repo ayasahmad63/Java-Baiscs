@@ -1,4 +1,4 @@
-public class _9_CoinChangePermutation {
+public class _09_CoinChangePermutation {
     public static void main(String[] args) {
 
         int[] arr={2,3,5,6};

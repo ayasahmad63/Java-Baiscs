@@ -1,4 +1,4 @@
-public class _8_CoinChangeCombination {
+public class _08_CoinChangeCombination {
 
 
     public static void main(String[] args) {

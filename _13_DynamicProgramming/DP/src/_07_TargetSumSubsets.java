@@ -1,4 +1,4 @@
-public class _7_TargetSumSubsets {
+public class _07_TargetSumSubsets {
 
     public static void main(String[] args) {
 

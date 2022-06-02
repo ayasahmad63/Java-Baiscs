@@ -1,4 +1,4 @@
-public class _2_Tabulation {
+public class _02_Tabulation {
 //
 //    Ques) Climbing stairs
 //         1)You are given a number n, representing the number of stairs in a staircase.

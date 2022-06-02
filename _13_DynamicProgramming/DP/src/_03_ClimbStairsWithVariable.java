@@ -1,4 +1,4 @@
-public class _3_ClimbStairsWithVariable {
+public class _03_ClimbStairsWithVariable {
 
 
 //   Question:-

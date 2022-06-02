@@ -1,4 +1,4 @@
-public class _4_ClimbingStairsWithMinimumMoves {
+public class _04_ClimbingStairsWithMinimumMoves {
 
 //    int vs Integer :- In int value is defined is zero && in Integer
 
