@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class ShellRotate {
+public class _06_ShellRotate {
 
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);

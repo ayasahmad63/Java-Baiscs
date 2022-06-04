@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class SpiralTranversal {
+public class _03_SpiralTranversal {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
 

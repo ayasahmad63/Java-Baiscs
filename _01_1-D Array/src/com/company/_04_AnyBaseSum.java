@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class AnyBaseSum {
+public class _04_AnyBaseSum {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the First Number");

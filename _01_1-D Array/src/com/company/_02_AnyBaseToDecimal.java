@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class AnyBaseToDecimal {
+public class _02_AnyBaseToDecimal {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 

@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class InverseOfAnArray {
+public class _13_InverseOfAnArray {
     public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);

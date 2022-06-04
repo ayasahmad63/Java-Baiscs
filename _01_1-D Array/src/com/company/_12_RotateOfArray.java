@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class RotateOfArray {
+public class _12_RotateOfArray {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 

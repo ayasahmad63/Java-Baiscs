@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Arrays;
 
-public class BinarySearchInStrictSorted {
+public class _10_BinarySearchInStrictSorted {
     public static void main(String[] args) {
 
         int[][] arr={

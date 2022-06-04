@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // Not c
 
-public class AnyBaseMultiplication {
+public class _06_AnyBaseMultiplication {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the First Number");

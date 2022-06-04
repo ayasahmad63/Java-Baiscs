@@ -1,9 +1,8 @@
 package com.company;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class BinarySearchIn2DArray {
+public class _09_BinarySearchIn2DArray {
     public static void main(String[] args) {
         int[][] arr={
             {10,20,30,40},

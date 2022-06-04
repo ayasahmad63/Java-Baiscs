@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class ReverseOfArray {
+public class _11_ReverseOfArray {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of an Array");

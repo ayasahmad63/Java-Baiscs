@@ -1,6 +1,6 @@
 package com.company;
 
-public class ExitPointOfMatrix {
+public class _04_ExitPointOfMatrix {
     public static void main(String[] args) {
          int[][] arr={
                  {0,0,1,0},

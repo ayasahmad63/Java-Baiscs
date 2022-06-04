@@ -1,6 +1,6 @@
 package com.company;
 
-public class FirstAndLastIndex {
+public class _18_FirstAndLastIndex {
     public static void main(String[] args) {
 
         int[] nums={10,20,30,30,30,30,40,50,60,70,70,70,80,80,90,90,90,90,90,90,100};

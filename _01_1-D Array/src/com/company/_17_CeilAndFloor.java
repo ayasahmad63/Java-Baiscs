@@ -1,6 +1,6 @@
 package com.company;
 
-public class CeilAndFloor {
+public class _17_CeilAndFloor {
     public static void main(String[] args) {
 
         int[] matrix={10,20,30,40,50,60,70,80,90,100};

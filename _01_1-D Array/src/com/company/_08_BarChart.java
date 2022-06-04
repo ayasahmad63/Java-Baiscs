@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class BarChart {
+public class _08_BarChart {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the no of arr to take");
