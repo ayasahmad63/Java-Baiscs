@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class _1_RepresentationOfGraph {
+public class _01_RepresentationOfGraph {
 
 //    https://youtu.be/t0r04fYdT7U
 //    There are two ways to Represent Graph

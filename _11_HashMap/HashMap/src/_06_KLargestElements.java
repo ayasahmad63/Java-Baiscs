@@ -1,6 +1,6 @@
 import java.util.PriorityQueue;
 
-public class kLargestElements {
+public class _06_KLargestElements {
 
     public static void main(String[] args) {
 

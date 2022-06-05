@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
-public class _4_GraphProblemWithDFS {
+public class _04_GraphProblemWithDFS {
 
 
     public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class _4_GraphProblemWithDFS {
    static  int vert=7;
    static boolean vertices[]=new boolean[vert];
 
-   public  static void  DFSSolution(ArrayList<_1_RepresentationOfGraph.Edge>[] graph,int src,int desti,String ans,int weigh,int val,int k){
+   public  static void  DFSSolution(ArrayList<_01_RepresentationOfGraph.Edge>[] graph, int src, int desti, String ans, int weigh, int val, int k){
        if(src==desti){
 
 //           Lergest Path Solution
@@ -73,7 +73,7 @@ public class _4_GraphProblemWithDFS {
         return;
        }
        vertices[src]=true;
-       for(_1_RepresentationOfGraph.Edge edge:graph[src] ){
+       for(_01_RepresentationOfGraph.Edge edge:graph[src] ){
            DFSSolution(graph,edge.neigh,desti,ans+src,weigh+src,val,k);
        }
 

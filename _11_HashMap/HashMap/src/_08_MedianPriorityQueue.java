@@ -1,8 +1,7 @@
-import java.lang.reflect.Constructor;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class MedianPriorityQueue {
+public class _08_MedianPriorityQueue {
 
     static  PriorityQueue<Integer> left;
     static  PriorityQueue<Integer>  right;

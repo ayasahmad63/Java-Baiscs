@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class GetCommonElement {
+public class _02_GetCommonElement1 {
 
     public static void main(String[] args) {
 

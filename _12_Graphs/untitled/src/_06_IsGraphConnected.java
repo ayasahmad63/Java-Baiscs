@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class _6_IsGraphConnected {
+public class _06_IsGraphConnected {
 
 
     public static class Edge {

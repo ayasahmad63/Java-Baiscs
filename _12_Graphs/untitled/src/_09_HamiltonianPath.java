@@ -10,7 +10,7 @@
     import java.io.*;
 import java.util.*;
 
-    public class _9_HamiltonianPath {
+    public class _09_HamiltonianPath {
         static class Edge {
             int src;
             int nbr;

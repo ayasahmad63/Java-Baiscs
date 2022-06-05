@@ -1,4 +1,4 @@
-public class _7_CountNumberOfIsland {
+public class _07_CountNumberOfIsland {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class HighestFrequencyCharacter {
+public class _01_HighestFrequencyCharacter {
 
     public static void main(String[] args) {
         String str="ahsfaliudaliylagahaa";

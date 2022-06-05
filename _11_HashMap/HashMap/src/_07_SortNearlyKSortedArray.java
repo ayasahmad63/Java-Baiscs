@@ -1,6 +1,6 @@
 import java.util.PriorityQueue;
 
-public class SortNearlyKSortedArray {
+public class _07_SortNearlyKSortedArray {
 
     public static void main(String[] args) {
         int[] arr={2,3,1,4,6,7,5,8,9};

@@ -10,14 +10,14 @@ public class _3_FindAllPathInGraph {
 
     static  boolean visited[]=new boolean[verti];
 
-    public static void FindAllPath(ArrayList<_1_RepresentationOfGraph.Edge>[] graph,int sour,int desti,String str){
+    public static void FindAllPath(ArrayList<_01_RepresentationOfGraph.Edge>[] graph, int sour, int desti, String str){
         if(sour==desti){
             System.out.println(str);
             return;
         }
 
         visited[sour]=true;
-        for(_1_RepresentationOfGraph.Edge edde:graph[sour]) {
+        for(_01_RepresentationOfGraph.Edge edde:graph[sour]) {
 //            if (!visited[edge.neigh]) {
 //                FindAllPath(graph, edde.neigh, desti, str + sour);
 //            }
