@@ -31,3 +31,12 @@
 [30) Top Down Matrix Chain  Multiplication]()</br>
 #### [31) Palindrome Partioning]()</br>
 [32) Memorized Palindrome Partioning]()
+
+
+
+
+## Question from Striver and pepcoding
+   This question is not in any sequence its random choosen so .
+
+[33) Distinct Subsequences]()
+[34) Edit Distance]()

@@ -11,7 +11,7 @@
 ### [10) *** Knap Sack ]()</br>
 [11) Equal Sum Partition]()</br>
 [12) Count Number of Subsets Equal to Sum )]()</br>
-[13) Minimum Subsets Sum Differnence]()</br>
+[13) Minimum Subsets Sum Differnence]()</br>s
 [14) Number of Subsets With Given Difference]()</br>
 ### [15) Unbounded Knap Sack ]()</br>
 [16) Rod Cutting Problem]()</br>
@@ -34,3 +34,8 @@
 
 
 
+
+## Question from Striver and pepcoding
+   This question is not in any sequence its random choosen so .
+
+[33) Distinct Subsequences]()
