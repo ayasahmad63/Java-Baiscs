@@ -38,5 +38,15 @@
 ## Question from Striver and pepcoding
    This question is not in any sequence its random choosen so .
 
-[33) Distinct Subsequences]()
-[34) Edit Distance]()
+[33) Distinct Subsequences]()</br>
+[34) Edit Distance]()</br>
+[35) WildCard Matching (not done yet)]()
+### DP On Stocks
+
+[36) Buy and Sell Stock1 ]()</br>
+[37) Buy and Sell Stock 2]()</br>
+[38) Buy and Sell Stock 3]()</br>
+[39) Buy and Sell Stock 4]()</br>
+[40) Buy and Sell Stock With Cooldown]()</br>
+[41) Buy and Sell Stock With transaction fee]()</br>
+
