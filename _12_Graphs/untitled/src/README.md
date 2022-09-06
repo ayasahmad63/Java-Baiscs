@@ -26,4 +26,4 @@ ALl the questions are very and equally important.
 
 ### Practice/Important Question
 [1) Number of Provinces](https://leetcode.com/problems/01-matrix/)
-[2) 01 Matrix](https://leetcode.com/problems/01-matrix/)
+[2) 01_Matrix](https://leetcode.com/problems/01-matrix/)
